@@ -36,6 +36,8 @@ PRESET VARIABLES:
 res : necessary for setting the resolution of the screen
 movement : will be removed soon
 fps : frames per second for speed of updates
+mx : the mouse X
+my the mouse Y
 
 POINT FUNCTION:
 origin X : origin Y : direction : magnitude : color
