@@ -41,6 +41,7 @@ my the mouse Y
 
 POINT FUNCTION:
 origin X : origin Y : direction : magnitude : color
+Syntax: x:y:dir:mag:col
 
 mx:my:0:0:#00ff00
 That would make a green dot wherever the mouse is.
@@ -49,6 +50,34 @@ LABELS:
 "start:" would create a label named start,
 You can move to that line using "gt start",
 Alternatively you can go to a specific line using "gt 5"
+Syntax: label:, gt label
+
+KEY PRESS:
+"kp k,f" sets the variable "k" to 1 or 0 depending on if the F key is pressed.
+Syntax: kp var,keyToPress
+
+IF STATEMENT:
+"if" chooses whether or not to skip the next line.
+"if 1" would run the next line.
+"if 0" would skip the next line.
+"if v
+g==1"
+If v equals 1, g will be set to 1, if v equals 0 or anything else, the line will be skipped.
+
+SIMPLE MOVEMENT BASICS:
+One way to do movement is:
+"kp key,w
+if key
+// which means this will run if W is pressed
+y=+1
+// change the Y var by 1
+
+kp key,s
+if key
+y=-1
+// change the Y var by -1"
+
+Simple Up/Down movement.
 
 EXTRA:
 break is a function which is necessary for screen updates, I suggest putting it in a loop at the end when you're ready to update the screen.
