@@ -1,8 +1,13 @@
 update 32626912a:
 Added function things!!
 Easy sprite stuff and uh yea!!!
+removed labels.
 I dunno
 Anyway I'm cooking
 
 update 32626930a:
 Added "reset" function!
+
+update 326261246b:
+Added "oper" function!
+Changed a few things and tweaks.
