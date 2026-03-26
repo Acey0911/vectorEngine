@@ -11,3 +11,8 @@ Added "reset" function!
 update 326261246b:
 Added "oper" function!
 Changed a few things and tweaks.
+
+update 32626137b:
+Added equals to "oper function"
+Created official example file (gameOfTag)
+Fixed a few bugs.
