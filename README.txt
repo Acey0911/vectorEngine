@@ -91,3 +91,8 @@ Simple Up/Down movement.
 EXTRA:
 break is a function which is necessary for screen updates, I suggest putting it in a loop at the end when you're ready to update the screen.
 erase is a function that clears the screen when needed.
+reset is a function that resets the program so you may upload a new file and such,
+it is recommended to add these lines to any loop function:
+"kp key,r
+ if key
+ reset"
