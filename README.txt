@@ -1,3 +1,5 @@
+My server: https://discord.gg/u8f8QC7V7k
+
 Hey! Thanks for being interested in my engine!
 Here is the format for a .vc file:
 -------------------customfile.vc-----------------------
