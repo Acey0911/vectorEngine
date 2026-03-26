@@ -46,6 +46,11 @@ fps : frames per second for speed of updates
 mx : the mouse X
 my the mouse Y
 
+MATH OPERATORS:
+Along with =, +, -, /, *, 
+I added a function for <, >, <=, and >=
+"oper v,n>2" would check if "n" is larger than 2, and set "v" to 1 or 0, depending on if it's true or not.
+
 POINT FUNCTION:
 origin X : origin Y : direction : magnitude : color
 Syntax: x:y:dir:mag:col
