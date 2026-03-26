@@ -46,12 +46,6 @@ Syntax: x:y:dir:mag:col
 mx:my:0:0:#00ff00
 That would make a green dot wherever the mouse is.
 
-LABELS:
-"start:" would create a label named start,
-You can move to that line using "gt start",
-Alternatively you can go to a specific line using "gt 5"
-Syntax: label:, gt label
-
 KEY PRESS:
 "kp k,f" sets the variable "k" to 1 or 0 depending on if the F key is pressed.
 Syntax: kp var,keyToPress
@@ -63,6 +57,21 @@ IF STATEMENT:
 "if v
 g==1"
 If v equals 1, g will be set to 1, if v equals 0 or anything else, the line will be skipped.
+
+FUNCTION THINGS:
+"block setA [
+a==5
+]"
+This will make a function named "setA", but will not run it until
+"do setA" is called.
+This will be useful, for example, making sprites that would be hard to recreate a hundred times.
+Always be sure to put "return" at the end of every function to return to the "do" command.
+Syntax: block setA [
+        a==5
+        return
+        ]
+        do setA
+
 
 SIMPLE MOVEMENT BASICS:
 One way to do movement is:
