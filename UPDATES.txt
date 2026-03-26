@@ -3,3 +3,6 @@ Added function things!!
 Easy sprite stuff and uh yea!!!
 I dunno
 Anyway I'm cooking
+
+update 32626930a:
+Added "reset" function!
