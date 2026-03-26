@@ -7,19 +7,24 @@ VC PROGRAM FILE 753753753
 // the line above must always be at the beginning of any .vc file for it to verify.
 // this is a comment
 
-setup:
+block setup [
 v==1
 res==3
 movement==6
 fps==20
+]
 
-loop:
+block loop [
 erase
 // comment
 x:v:90:20:#00ff00
 v=+1
 break
-gt loop
+do loop
+]
+
+do setup
+do loop
 ------------------end of file--------------------------
 
 Here are the base functions:
