@@ -1,0 +1,106 @@
+VC PROGRAM FILE 753753753
+
+// Hi!!
+// This file is an example of things you can do with this engine.
+// WASD for green player (player 1)
+// IJKL for blue player (player 2)
+// Align the players to show a red circle
+
+// The block below sets all the starting variables
+
+block setup [
+res==3
+mov==3
+fps==20
+x==1
+y==1
+a==10
+b==10
+return
+]
+
+// The block below is my main loop script
+
+block loop [
+erase
+
+// if R is pressed it resets the engine to allow easy file switching
+
+kp k,r
+if k
+reset
+
+do p1controls
+do p2controls
+
+x:y:i0,360:5:#00ff00
+a:b:i0,360:8:#0000ff
+
+do collision
+
+// Always add a break to allow the screen to update
+
+break
+do loop
+]
+
+// This script below checks for WASD and changes x and y respectively
+
+block p1controls [
+kp k,w
+if k
+y=+mov
+
+kp k,a
+if k
+x=-mov
+
+kp k,s
+if k
+y=-mov
+
+kp k,d
+if k
+x=+mov
+
+return
+]
+
+block p2controls [
+kp k,i
+if k
+b=+mov
+
+kp k,j
+if k
+a=-mov
+
+kp k,k
+if k
+b=-mov
+
+kp k,l
+if k
+a=+mov
+
+return
+]
+
+// The block below sets c1 to 1 or 0 depending on if x = a, and sets c2 to 1 or 0 if y = b,
+// Then adds c2 to c1 and then checks if c1 = 2, if it does, it sets c3 to 1 and then draws a red circle.
+
+block collision [
+oper c1,x=a
+oper c2,y=b
+c1=+c2
+oper c3,c1=2
+if c3
+0:0:i0,360:10:#ff0000
+
+return
+]
+
+// Calls setup and then returns and calls loop, then stays in loop
+
+do setup
+do loop
