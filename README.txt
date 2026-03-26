@@ -1,4 +1,6 @@
 My server: https://discord.gg/u8f8QC7V7k
+Itch.io page: https://this-dude-0.itch.io/vector-code-engine
+Simple introduction: https://scratch.mit.edu/projects/1296136199/
 
 Hey! Thanks for being interested in my engine!
 Here is the format for a .vc file:
