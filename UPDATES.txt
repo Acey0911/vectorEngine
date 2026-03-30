@@ -17,5 +17,5 @@ Added equals to "oper function"
 Created official example file (gameOfTag)
 Fixed a few bugs.
 
-update 33026818a:
+update 33026818a (The "Dynamicolor" Update):
 Added color Manipulation!!
