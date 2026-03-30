@@ -86,6 +86,10 @@ Syntax: block setA [
         ]
         do setA
 
+COLOR MANIPULATION:
+"col var,r,g,b" sets "var" to a hex code with the values of Red Green and Blue, each value can be 1-255.
+"col color,10,10,10" would set "color" to "#0A0A0A"
+Useful for dynamic colors!
 
 SIMPLE MOVEMENT BASICS:
 One way to do movement is:
