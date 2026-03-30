@@ -16,3 +16,6 @@ update 32626137b:
 Added equals to "oper function"
 Created official example file (gameOfTag)
 Fixed a few bugs.
+
+update 33026818a:
+Added color Manipulation!!
