@@ -53,6 +53,10 @@ Along with =, +, -, /, *,
 I added a function for <, >, <=, and >=
 "oper v,n>2" would check if "n" is larger than 2, and set "v" to 1 or 0, depending on if it's true or not.
 
+RAND FUNCTION:
+"rand var,min,max,decimals" will set a the var to a random number between 2 numbers, and you can change how many decimals you want after the decimal point?
+"rand num,1,10,0" would set num to a whole number between 1 and 10.
+
 POINT FUNCTION:
 origin X : origin Y : direction : magnitude : color
 Syntax: x:y:dir:mag:col
