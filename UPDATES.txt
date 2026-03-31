@@ -19,3 +19,6 @@ Fixed a few bugs.
 
 update 33026818a (The "Dynamicolor" Update):
 Added color Manipulation!!
+
+update 33126121b:
+Added "rand" function
