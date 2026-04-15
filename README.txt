@@ -1,13 +1,11 @@
-My server: https://discord.gg/u8f8QC7V7k
-Itch.io page: https://this-dude-0.itch.io/vector-code-engine
-Simple introduction: https://scratch.mit.edu/projects/1296136199/
-
-Hey! Thanks for being interested in my engine!
-Here is the format for a .vc file:
--------------------customfile.vc-----------------------
 VC PROGRAM FILE 753753753
+
 // the line above must always be at the beginning of any .vc file for it to verify.
 // this is a comment
+
+-------------------customfile.vc-----------------------
+
+VC PROGRAM FILE 753753753
 
 block setup [
 v==1
@@ -27,6 +25,7 @@ do loop
 
 do setup
 do loop
+
 ------------------end of file--------------------------
 
 Here are the base functions:
@@ -49,13 +48,13 @@ mx : the mouse X
 my the mouse Y
 
 MATH OPERATORS:
-Along with =, +, -, /, *, 
+Along with =, +, -, /, *,
 I added a function for <, >, <=, and >=
 "oper v,n>2" would check if "n" is larger than 2, and set "v" to 1 or 0, depending on if it's true or not.
 
 RAND FUNCTION:
-"rand min,max,decimals,var" will set a the var to a random number between 2 numbers, and you can change how many decimals you want after the decimal point?
-"rand 1,10,0,num" would set num to a whole number between 1 and 10.
+"rand var,min,max,decimals" will set a the var to a random number between 2 numbers, and you can change how many decimals you want after the decimal point?
+"rand num,1,10,0" would set num to a whole number between 1 and 10.
 
 DIST FUNCTION:
 "dist x1,y1,x2,y2,var" will find the pixel distance from (x1,y1) to (x2,y2), and set the var to the distance.
@@ -88,10 +87,10 @@ This will make a function named "setA", but will not run it until
 This will be useful, for example, making sprites that would be hard to recreate a hundred times.
 Always be sure to put "return" at the end of every function to return to the "do" command.
 Syntax: block setA [
-        a==5
-        return
-        ]
-        do setA
+a==5
+return
+]
+do setA
 
 COLOR MANIPULATION:
 "col var,r,g,b" sets "var" to a hex code with the values of Red Green and Blue, each value can be 1-255.
@@ -122,5 +121,5 @@ erase is a function that clears the screen when needed.
 reset is a function that resets the program so you may upload a new file and such,
 it is recommended to add these lines to any loop function:
 "kp key,r
- if key
- reset"
+if key
+reset"
