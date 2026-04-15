@@ -12,6 +12,7 @@ v==1
 res==3
 movement==6
 fps==20
+return
 ]
 
 block loop [
@@ -21,6 +22,7 @@ x:v:90:20:#00ff00
 v=+1
 break
 do loop
+return
 ]
 
 do setup
@@ -91,6 +93,7 @@ a==5
 return
 ]
 do setA
+----ALWAYS ADD RETURN AT THE END OF A BLOCK---
 
 COLOR MANIPULATION:
 "col var,r,g,b" sets "var" to a hex code with the values of Red Green and Blue, each value can be 1-255.
