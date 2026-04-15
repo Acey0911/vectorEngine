@@ -113,6 +113,9 @@ y=-1
 
 Simple Up/Down movement.
 
+DBG FUNCTION:
+"dbg hello" will print "hello" on the screen, used for Debugging!
+
 EXTRA:
 break is a function which is necessary for screen updates, I suggest putting it in a loop at the end when you're ready to update the screen.
 erase is a function that clears the screen when needed.
