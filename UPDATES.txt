@@ -26,3 +26,4 @@ Added "rand" function
 update 415261210b:
 Added "dist" function, changed order of rand stuff.
 (it's been weeks wow)
+added "dbg" for debugging
