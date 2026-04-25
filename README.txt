@@ -64,12 +64,8 @@ RAND FUNCTION:
 DIST FUNCTION:
 "dist x1,y1,x2,y2,var" will find the pixel distance from (x1,y1) to (x2,y2), and set the var to the distance.
 
-POINT FUNCTION:
-origin X : origin Y : direction : magnitude : color
-Syntax: x:y:dir:mag:col
-
-mx:my:0:0:#00ff00
-That would make a green dot wherever the mouse is.
+DRAWING:
+"draw x,y,color" draws points.
 
 KEY PRESS:
 "kp k,f" sets the variable "k" to 1 or 0 depending on if the F key is pressed.
